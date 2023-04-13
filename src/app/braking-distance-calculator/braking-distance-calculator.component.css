@@ -1,0 +1,56 @@
+/* Стили для контейнера калькулятора */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+  }
+  
+  /* Стили для заголовка калькулятора */
+  .calculator-container > div:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для полей ввода */
+  .calculator-container label {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .calculator-container input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: right;
+  }
+  
+  /* Стили для кнопки расчета */
+  .calculator-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .calculator-container button:hover {
+    background-color: #e53935;
+  }
+  
+  /* Стили для результата расчета */
+  .calculator-container div:last-child {
+    margin-top: 20px;
+  }

@@ -1,0 +1,24 @@
+<div class="calculator-container">
+    <div>Калькулятор тормозного пути</div>
+    <div>
+        <label>Начальная скорость:</label>
+        <input type="number" [(ngModel)]="starting_speed">
+    </div>
+    
+    <div>
+        <label>Коэффициент торможения:</label>
+        <input type="number" [(ngModel)]="drag_coefficient">
+    </div>
+    
+    <div>
+        <label>Коэффициент сцепления:</label>
+        <input type="number" [(ngModel)]="adhesion_coefficient">
+    </div>
+    
+    <div>
+        <label>Тормозной путь:</label>
+        <input type="number" [(ngModel)]="braking_distances" [disabled]="true">
+    </div>
+    
+    <button (click)="calculateBrakingDistance()">Calculate</button>
+</div>
